@@ -67,11 +67,11 @@
             </com.github.florent37.shapeofview.ShapeOfView>
             <TextView
                 android:id="@+id/text_username"
-                style="@style/text_body"
+                style="@style/text_header"
                 app:layout_constraintStart_toEndOf="@id/frame_photo"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
                 android:text="USERNAME"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -80,7 +80,7 @@
             android:layout_height="1dp"
             android:background="@drawable/bg_divider"
             android:layout_marginTop="44dp"
-            android:layout_marginBottom="30dp"/>
+            android:layout_marginBottom="16dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -103,8 +103,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@drawable/bg_divider"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,8 +127,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@drawable/bg_divider"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,8 +151,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@drawable/bg_divider"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
     </LinearLayout>
 
