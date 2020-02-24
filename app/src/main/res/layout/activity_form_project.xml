@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    tools:context=".ProfilSayaAct">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@color/yellow_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROJECT"
+
+            style="@style/text_toolbar"
+            android:fontFamily="@font/bebasreguler"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/text_verifikasi"
+            android:text="Nama Project"
+            style="@style/text_header"
+            android:layout_marginBottom="11dp"/>
+
+        <EditText
+            style="@style/inputtext"
+            android:layout_marginBottom="11dp"
+            android:elevation="4dp"
+            android:hint="Masukkan Nama Project ..."/>
+
+        <TextView
+            android:id="@+id/text_daftar_tugas"
+            android:text="Daftar Tugas"
+            style="@style/text_header"
+            android:layout_marginBottom="11dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task List 1"
+                style="@style/text_body"
+                android:layout_weight="7"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_edit"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_delete"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task List 2"
+                style="@style/text_body"
+                android:layout_weight="7"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_edit"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_delete"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task List 3"
+                style="@style/text_body"
+                android:layout_weight="7"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_edit"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_delete"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_tambah_daftar"
+        style="@style/btn_yellow_primary"
+        android:elevation="4dp"
+        android:layout_margin="35dp"
+        android:background="@drawable/bg_btn_yellow_primary"
+        app:layout_constraintTop_toBottomOf="@id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="TAMBAH DAFTAR BARU"
+        android:drawableLeft="@drawable/ic_add_small"
+        android:drawablePadding="8dp"
+        android:padding="10dp"/>
+    <Button
+        style="@style/btn_yellow_primary"
+        android:elevation="4dp"
+        android:layout_margin="70dp"
+        android:background="@drawable/bg_btn_yellow_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="SIMPAN PROJECT"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

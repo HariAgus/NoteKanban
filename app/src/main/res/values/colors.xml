@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#f7d200</color>
+<<<<<<< HEAD
     <color name="colorPrimaryDark">#e8c125</color>
     <color name="colorAccent">#FBED9E</color>
 
@@ -11,4 +12,14 @@
     <color name="bg_primaryWhite">#f7f7f7</color>
     <color name="blue_text">#3232FF</color>
 
+=======
+    <color name="colorPrimaryDark">#FFC107</color>
+    <color name="colorAccent">#f7f7f7</color>
+
+    <color name="yellow_primary">#f7d200</color>
+
+
+    <color name="bg_splahscreen">#FBED9E</color>
+    <color name="bg_screen">#F7F7F7</color>
+>>>>>>> 353f1d24fa27227353fe06d4e4e365b98d3d7949
 </resources>
