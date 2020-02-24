@@ -10,15 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SuccessRegisterAct"></activity>
-        <activity android:name=".VerifikasiAct" />
+        <activity android:name=".VerifikasiAct">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".FormProjectAct" />
         <activity android:name=".KategoriAct" />
         <activity android:name=".ProfilSayaAct">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
