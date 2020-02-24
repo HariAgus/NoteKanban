@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#f7d200</color>
+    <color name="colorPrimaryDark">#e8c125</color>
+    <color name="colorAccent">#FBED9E</color>
 
 
-    <color name="bg_splahscreen">#FBED9E</color>
+
+    <color name="bg_primary">#FBED9E</color>
+    <color name="yellowPrimary">#f7d200</color>
+    <color name="bg_primaryWhite">#f7f7f7</color>
+    <color name="blue_text">#3232FF</color>
+
 </resources>

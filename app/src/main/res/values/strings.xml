@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">NoteKanban</string>
+    <string name="app_name">Note Kanban</string>
+    <string name="titletodo"><b>TO DO</b> \n <i>Rencana</i></string>
+    <string name="titledoing"><b>DO ING</b> \n <i>Dilakukan</i></string>
+    <string name="titledone"><b>DONE</b> \n <i>Selesai</i></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

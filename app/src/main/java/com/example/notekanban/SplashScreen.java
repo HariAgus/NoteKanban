@@ -6,23 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash_screen);
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent gotonext = new Intent(MainActivity.this, HomeScreenActivity.class);
-                startActivity(gotonext);
+                Intent i = new Intent(SplashScreen.this, LoginScreen.class);
+                startActivity(i);
                 finish();
             }
         },3000);
-
-
     }
 }

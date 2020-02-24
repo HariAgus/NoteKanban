@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primaryWhite"
+    tools:context=".HomeScreenActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" >
+
+        <TextView
+            android:text="NOTE KANBAN"
+            android:paddingLeft="28dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellowPrimary"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titletodo" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabDoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titledoing" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titledone"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:theme="@style/Float"
+        android:src="@drawable/ic_add"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
