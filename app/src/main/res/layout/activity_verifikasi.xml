@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".VerifikasiAct">
+
+    <View
+        android:id="@+id/bg_shape"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/bg_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_verifikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERIFIKASI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/montbold"
+        android:textSize="34sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/text_masukan_kode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Kode Verifikasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_verifikasi"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/montregular"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:id="@+id/linearkode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text_masukan_kode"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginTop="22dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_edit"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_edit"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_edit"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_edit"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_edit"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_edit"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_verifikasi"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:text="VERIFIKASI"
+        app:layout_constraintTop_toBottomOf="@id/linearkode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_btn_yellow_primary"
+        android:fontFamily="@font/montbold"
+        android:textSize="16sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_verifikasi"
+        android:layout_marginTop="19dp"
+        android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/text_belum_menerima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum Menerima Kode Aktifasi ?"
+
+
+        android:fontFamily="@font/montregular"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+        <TextView
+        android:id="@+id/text_kirim_ulang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim Ulang Kode"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montregular"
+        android:textSize="16sp"
+        android:textColor="#4184F3"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

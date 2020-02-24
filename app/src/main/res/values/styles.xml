@@ -8,8 +8,46 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<<<<<<< HEAD
     <style name="Float" parent="Widget.Design.FloatingActionButton">
         <item name="android:background">@color/yellowPrimary</item>
+=======
+    <style name="text_toolbar">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="text_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montbold</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="text_body">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montregular</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="btn_yellow_primary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/montbold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="inputtext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_input_edit</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:inputType">text</item>
+>>>>>>> 353f1d24fa27227353fe06d4e4e365b98d3d7949
     </style>
 
 </resources>

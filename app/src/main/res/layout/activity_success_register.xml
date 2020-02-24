@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBED9E"
+    tools:context=".SuccessRegisterAct">
+
+    <ImageView
+        android:id="@+id/image_success_register"
+        android:layout_width="285dp"
+        android:layout_height="270dp"
+        android:src="@drawable/img_success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="73dp"/>
+    <TextView
+        android:id="@+id/text_berhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berhasil Mendaftar,"
+        app:layout_constraintTop_toBottomOf="@id/image_success_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/montbolditalic"
+        android:textColor="#000"
+        android:textSize="26dp"/>
+    <TextView
+        android:id="@+id/text_kelola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelola Rencanamu Sekarang !"
+        app:layout_constraintTop_toBottomOf="@id/text_berhasil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/montregular"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="23dp"/>
+    <Button
+        android:id="@+id/btn_lihat_beranda"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:text="LIHAT BERANDA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/bg_btn_yellow_primary"
+        android:fontFamily="@font/montbold"
+        android:textSize="16sp"
+        />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
