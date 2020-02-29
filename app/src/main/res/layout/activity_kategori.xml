@@ -51,7 +51,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FBED9E"
-                android:src="@drawable/bg_kategori_color" />
+                android:src="@drawable/bg_kategori_color"
+                android:layout_marginRight="20dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,7 +85,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#A49FF5"
-                android:src="@drawable/bg_kategori_color" />
+                android:src="@drawable/bg_kategori_color"
+                android:layout_marginRight="20dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -116,7 +118,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#9FF5B0"
-                android:src="@drawable/bg_kategori_color" />
+                android:src="@drawable/bg_kategori_color"
+                android:layout_marginRight="20dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

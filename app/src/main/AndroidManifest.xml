@@ -9,23 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterTwo"></activity>
+        <activity android:name=".RegisterTwo" />
         <activity android:name=".RegisterOne" />
         <activity android:name=".LoginScreen" />
         <activity android:name=".SuccesRegister" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SuccessRegisterAct"></activity>
-        <activity android:name=".VerifikasiAct">
-        </activity>
+        <activity android:name=".SuccessRegisterAct" />
+        <activity android:name=".VerifikasiAct"></activity>
         <activity android:name=".FormProjectAct" />
         <activity android:name=".KategoriAct" />
-        <activity android:name=".ProfilSayaAct">
-        </activity>
+        <activity android:name=".ProfilSayaAct"></activity>
         <activity android:name=".HomeScreenActivity" />
     </application>
 

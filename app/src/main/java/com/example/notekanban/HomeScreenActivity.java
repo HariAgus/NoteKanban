@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
+
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
@@ -23,7 +26,7 @@ public class HomeScreenActivity extends AppCompatActivity {
     TabItem tabTodo, tabDoing, tabDone;
     TabLayout tabLayout;
     ViewPager viewPager;
-    Float fab;
+    FloatingActionButton fab;
 
     @SuppressLint("ResourceType")
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -38,13 +41,21 @@ public class HomeScreenActivity extends AppCompatActivity {
         tabDoing = findViewById(R.id.tabDoing);
         tabDone = findViewById(R.id.tabDone);
         viewPager = findViewById(R.id.viewPager);
-
-        FloatingActionButton floatbtn = (FloatingActionButton) findViewById(R.id.fab);
+        fab = findViewById(R.id.fab);
 
         TabAdapter tabAdapter = new TabAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(tabAdapter);
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        setSupportActionBar(toolbar);
+
+        //Button Create Note
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HomeScreenActivity.this, FormProjectAct.class);
+                startActivity(i);
+            }
+        });
+
+
 
     }
 
